@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* 自定義捲軸樣式 (放在後面) */
+@theme {
+  /* 如果有需要自定義 theme 變數放這裡 */
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 你的捲軸 CSS 可以接續寫在下面 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
